@@ -1,11 +1,12 @@
 const appLogin=new(function(){
     this.tbody=document.getElementById("tbody");
+    this.id=document.getElementById("id");
     this.usuario=document.getElementById("usuario");
     this.clave=document.getElementById("clave");
-    
+
     this.verificarLogin=()=>{
         var form=new FormData();
-        alert("BIENVENIDO DE NUEVO "+this.usuario.value);
+        form.append("id",this.id.value);
         form.append("usuario",this.usuario.value);
         form.append("clave",this.clave.value);
         fetch("../controlador/verificarLogin.php",{
@@ -13,10 +14,11 @@ const appLogin=new(function(){
             body:form,
         })
         .then((res)=>res.json()).then((data)=>{
-            if(data.ci!=null){
-                window.location.href="app\vista\login.php";
+            if(data.clave!=null){
+                alert("BIENVENIDO DE NUEVO "+this.usuario.value);
+                window.location.href="../vista/lobby.php";
             }
         })
-        .catch((error)=>console.log("error "+error));
-    }
+        .catch((error)=>console.log(error));
+    };
 })

@@ -1,7 +1,6 @@
 <?php
 require_once("../config/conexion.php");
 class Usuario extends Conexion{
-
     public static function guardarDatos($data){
         try{
             $sql="INSERT INTO usuario(ci,nombre,apellido,telefono,direccion,email,usuario,clave)

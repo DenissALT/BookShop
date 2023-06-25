@@ -60,8 +60,7 @@ const appU=new(function(){
             document.getElementById("direccion").value=data.direccion;
             document.getElementById("email").value=data.email;
             document.getElementById("usuario").value=data.usuario;
-            document.getElementById("clave").value=data.clave;
-            
+            document.getElementById("clave").value=data.clave;   
         })
         .catch((error)=>console.log(error));
     }
