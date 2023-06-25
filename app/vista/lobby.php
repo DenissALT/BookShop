@@ -31,7 +31,7 @@
                 <a href="articulo.php" class="nav-menu-link nav-link">carrito</a>
             </li>
             <li class="nav-menu-item">
-                <a href="articulo.php" class="nav-menu-link nav-link">registrate</a>
+                <a href="login.php" class="nav-menu-link nav-link">login</a>
             </li>
         </ul>
 

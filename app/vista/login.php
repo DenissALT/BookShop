@@ -13,8 +13,26 @@
     <header class="header">
         <nav class="nav">
         <ul class="nav-menu">
+        <li class="nav-menu-item">
+                <a href="compra.php" class="nav-menu-link nav-link">poner logo</a>
+            </li>
             <li class="nav-menu-item">
-                <a href="login.php" class="nav-menu-link nav-link nav-menu-link_active">Login</a> 
+                <a href="usuario.php" class="nav-menu-link nav-link">inicio</a>
+            </li>
+            <li class="nav-menu-item">
+                <a href="cliente.php" class="nav-menu-link nav-link">categorias</a>
+            </li>
+            <li class="nav-menu-item">
+                <a href="proveedor.php" class="nav-menu-link nav-link">novedades</a>
+            </li>
+            <li class="nav-menu-item">
+                <a href="articulo.php" class="nav-menu-link nav-link">sucursales</a>
+            </li>
+            <li class="nav-menu-item">
+                <a href="articulo.php" class="nav-menu-link nav-link">carrito</a>
+            </li>
+            <li class="nav-menu-item">
+                <a href="login.php" class="nav-menu-link nav-link">login</a>
             </li>
         </ul>
         </nav>
@@ -45,7 +63,7 @@
                 /></td>
             </tr>
             <td colspan="2">
-                <button onclick="appU.verificarLogin()" class="">Guardar</button>
+                <button onclick="appLogin.verificarLogin()" class="">Guardar</button>
                 <button type="reset" class="">Limpiar</button>
             </td>
         </tr>       

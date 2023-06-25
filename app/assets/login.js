@@ -1,4 +1,4 @@
-const appU=new(function(){
+const appLogin=new(function(){
     this.tbody=document.getElementById("tbody");
     this.usuario=document.getElementById("usuario");
     this.clave=document.getElementById("clave");
@@ -14,7 +14,7 @@ const appU=new(function(){
         })
         .then((res)=>res.json()).then((data)=>{
             if(data.ci!=null){
-                window.location.href="../vista/index.php";
+                window.location.href="app\vista\login.php";
             }
         })
         .catch((error)=>console.log("error "+error));
