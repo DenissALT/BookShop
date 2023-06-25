@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  h5{
+    font-family: Helvetica;
+    font-weight: bold;
+  }
+  body {
+    font-family: sans-serif;
+    padding: 90px 20px 0;
+    min-height: 100%;
+  }
+  table {
+    border-spacing: 10px;
+  }
+  .header {
+    background-color: rgb(0, 64, 241);
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: space-between;
+  
+    max-width: 992px;
+    margin: 0 auto;
+  }
+  
+  .nav-link {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--primary-color);
+  }
+  
+  .logo img {
+    border-radius: 50%;
+  }
+  
+  .nav-menu {
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+  }
+  
+  .nav-menu-item {
+    font-size: 18px;
+    margin: 0 10px;
+    line-height: 80px;
+    text-transform: uppercase;
+    width: max-content;
+  }
+  
+  .nav-menu-link {
+    padding: 8px 12px;
+    border-radius: 3px;
+  }
+  
+  .nav-menu-link:hover,
+  .nav-menu-link_active {
+    background-color: #fa51f1;
+    transition: 0.5s;
+  }  
+  .main-img{
+    background-image:url("/app/img/fondo-Paraguay.jpg");
+    color:#ffffff
+  }
+  /* TOGGLE */
+  .nav-toggle {
+    color: white;
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+    cursor: pointer;
+  
+    display: none;
+  }
+  .contenido{
+    background-color: #f1f1f1;
+    display: flex;
+    margin: 3px;
+    width: 100wx;
+  }
+  .menuListado{
+    align-items: center;
+    background-color: darkgray;
+    display:flex;
+    height: 20vw;
+  }
+  .menuLista{
+    align-items: center;
+    background-color: rgb(245, 173, 173);
+    display:flex;
+    flex-grow: 1;
+    height: 20vh;
+    justify-content: center;
+  }
+  
+  /* MOBILE */
+  @media (max-width: 768px) {
+    body {
+      padding-top: 70px;
+    }
+  
+    .header {
+      height: 60px;
+    }
+  
+    .logo {
+      font-size: 25px;
+      padding: 0 20px;
+      line-height: 60px;
+    }
+  
+    .nav-menu {
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      background-color: #2c3e50;
+      position: fixed;
+      top: 60px;
+      width: 100%;
+      padding: 20px 0;
+  
+      height: calc(100% - 60px);
+      overflow-y: auto;
+  
+      left: 100%;
+      transition: left 0.3s;
+    }
+  
+    .nav-menu-item {
+      line-height: 70px;
+    }
+  
+    .nav-menu-link:hover,
+    .nav-menu-link_active {
+      background: none;
+      color: #83c5f7;
+    }
+  
+    .nav-toggle {
+      display: block;
+    }
+  
+    .nav-menu_visible {
+      left: 0;
+    }
+  
+    .nav-toggle:focus:not(:focus-visible) {
+      outline: none;
+    }    
+  }
