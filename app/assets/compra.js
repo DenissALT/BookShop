@@ -1,12 +1,4 @@
 const appC=new(function(){
-    // this.tbody=document.getElementById("tbody");
-    // this.id=document.getElementById("id");
-    // this.compra=document.getElementById("compra");
-    // this.fecha=document.getElementById("fecha");
-    // this.proveedorid=document.getElementById("proveedorid");
-    // this.total=document.getElementById("total");
-    // this.usuario=document.getElementById("usuario");
-
     this.tbody=document.getElementById("tbody");
     this.id=document.getElementById("id");
     this.ci=document.getElementById("ci");

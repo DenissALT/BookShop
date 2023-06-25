@@ -2,11 +2,11 @@
 class Conexion
 {
     public $host="localhost";
-    public $db_name="Facturacion";
+    public $db_name="bookshop";
     public $port="5432";
     public $user="postgres";
     public $driver="pgsql";
-    public $password= "12345";
+    public $password= "123";
     public $con;
 
     public static function getConexion()
